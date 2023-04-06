@@ -27,9 +27,9 @@ if not errorlevel 1 (
     )
 ) 
 
-if not exist C:\flexandbison\ ( echo "You need to have the Flex and Bison Packages, please see documentation." && exit /b 1 )
+if not exist E:\DevTools\FlexBison ( echo "You need to have the Flex and Bison Packages, please see documentation." && exit /b 1 )
 
-set PATH=%PATH%;E:\DevTools\FlexAndBison
+set PATH=%PATH%;E:\DevTools\FlexBison
 nmake /F NMakefile
 mkdir binary\windows64\
 move lslint.exe binary\windows64\
